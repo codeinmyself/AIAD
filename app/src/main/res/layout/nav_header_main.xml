@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="@drawable/side_nav_bar">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerInParent="true" />-->
+    <ImageButton
+        android:id="@+id/icon_image"
+        android:onClick="icon_image_click"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="头像"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="account@email.com"
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mail"
+        android:text="未登录"
+        android:visibility="invisible"
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="button1_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mail"
+        android:text="点击登录"
+        android:background="@android:color/transparent"
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

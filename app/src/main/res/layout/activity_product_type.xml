@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/description"
+        android:text="检测结果为以下类型，请选择："
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--<TextView
+        android:id="@+id/productType1"
+        android:text="类型1"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productType2"
+        android:text="类型2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/productType1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productType3"
+        android:text="类型3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/productType2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productType4"
+        android:text="类型4"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/productType3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/productType5"
+        android:text="类型5"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/productType4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="类型1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型2" />
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonConfirm1"
+        android:layout_below="@+id/radioGroup1"
+        android:text="确定"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

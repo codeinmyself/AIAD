@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+    </LinearLayout>-->
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <SurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/video_start"
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp">
+
+                </ImageButton>
+
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:maxHeight="8dp"
+                    android:minHeight="8dp"
+
+                    />
+
+                <!--<ImageButton
+                    android:id="@+id/video_pause"
+                    android:layout_width="15dp"
+                    android:contentDescription="video_pause"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp" />-->
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <com.xmu.lxq.aiad.SudokuUtil.ActiveGrideView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="220dp"
+            android:cacheColorHint="#ffffff"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:listSelector="#ffffff"
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/gridview" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+    <!-- <com.xmu.lxq.aiad.SudokuUtil.ActiveGrideView
+         android:id="@+id/gridview"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="220dp"
+         android:cacheColorHint="#ffffff"
+         android:gravity="center"
+         android:horizontalSpacing="10dp"
+         android:listSelector="#ffffff"
+         android:numColumns="3"
+         android:verticalSpacing="10dp" />-->

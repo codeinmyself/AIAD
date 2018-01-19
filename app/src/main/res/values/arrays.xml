@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页gridview -->
+    <string-array name="home_grid_texts">
+        <item>宫格1</item>
+        <item>宫格2</item>
+        <item>宫格3</item>
+        <item>宫格4</item>
+        <item>宫格5</item>
+        <item>宫格6</item>
+        <item>宫格7</item>
+        <item>宫格8</item>
+        <item>宫格9</item>
+        
+    </string-array>
+    <array name="home_grid_imgs">
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+        <item>@drawable/app_click</item>
+    </array>
+
+</resources>
